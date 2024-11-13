@@ -1,0 +1,33 @@
+[
+    "query",
+    "size",
+    "page",
+    "per_page",
+    "color",
+    "locale",
+    "category",
+    "safesearch",
+    "order",
+    "orientation",
+    "image_type"
+]
+
+              unsplash     pixabay     pexels   
+
+query           ✅           ✅         ✅
+size            
+page            ✅           ✅         ✅
+per_page        ✅           ✅         ✅
+colors          ❌           ✅         ❌
+locale          ❌           ❌         ❌    
+category        ❌           ✅         ❌
+safesearch      ❌           ✅         ❌
+order           ❌           ✅         ✅
+orientation     ❌           ✅         ✅
+image_type      ❌           ✅         ❌
+
+input params from frontend:
+
+unsplash: query, page, per_page, order, orientation
+pexels: query, page, per_page
+pixabay: query, page, per_page, order, orientation

@@ -1,0 +1,611 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Creator Copilot",
+    "collectionId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+    "dateExported": "2024-06-03T07:22:30.517Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "1e7a405e-5a5a-4941-936d-ae3095717c58",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2024-05-13T16:37:59.265Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9ecdb70d-e652-4d7e-bbe5-82f6544621da",
+            "name": "Chats",
+            "containerId": "",
+            "created": "2024-05-13T16:38:12.851Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "04cb89f5-2918-480e-b11c-8024db61041c",
+            "name": "Messages",
+            "containerId": "",
+            "created": "2024-05-13T16:38:25.738Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "0af79693-5310-4a68-9923-d93073ac826f",
+            "name": "onboarding",
+            "containerId": "",
+            "created": "2024-05-30T04:50:02.325Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "7a16f61f-5370-4eca-aaa4-14a68364f53f",
+            "name": "Project",
+            "containerId": "",
+            "created": "2024-05-30T04:50:12.023Z",
+            "sortNum": 50000
+        },
+        {
+            "_id": "4941e6ca-579e-493f-b34b-e84acadccc69",
+            "name": "project proposal",
+            "containerId": "",
+            "created": "2024-05-30T09:33:18.349Z",
+            "sortNum": 60000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "3d33af14-8fda-42a9-a03a-65e0222ea84a",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "1e7a405e-5a5a-4941-936d-ae3095717c58",
+            "name": "register user",
+            "url": "http://localhost:8000/api/users/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-13T16:40:47.975Z",
+            "modified": "2024-05-30T07:04:48.043Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"mister PM\",\n  \"email\":\"pm@pm.com\",\n  \"password\": \"12345678\",\n  \"role\": \"project manager\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8bea4e12-ad56-44b8-92a3-0a573d7d5380",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "1e7a405e-5a5a-4941-936d-ae3095717c58",
+            "name": "user login",
+            "url": "http://localhost:8000/api/users/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-13T17:05:46.932Z",
+            "modified": "2024-06-03T05:40:46.915Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"freelancer@freelancer.com\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5a1e448a-c591-4d1e-8343-5f0c1b902368",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "1e7a405e-5a5a-4941-936d-ae3095717c58",
+            "name": "fetch users  🟢🔴",
+            "url": "http://localhost:8000/api/users/users",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-05-18T05:35:01.692Z",
+            "modified": "2024-05-20T13:21:25.560Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjRhZGNlYmI2YjFmY2QwMGU1Njg3ZmIiLCJpYXQiOjE3MTYxODI0NDAsImV4cCI6MTcxODc3NDQ0MH0.J2UViJSK-7236lpfHVlyqQRsDHUz0OuL9B5V1DIhuyA"
+            }
+        },
+        {
+            "_id": "db2fba51-8da3-4f0a-8597-2492981c20d6",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "9ecdb70d-e652-4d7e-bbe5-82f6544621da",
+            "name": "create chat / access chat ",
+            "url": "http://localhost:8000/api/chat",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-05-20T05:26:18.414Z",
+            "modified": "2024-05-20T13:31:43.184Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"chatName\": \"Client with client\",\n  \"userId\": \"661ac1c80083deee9107411c\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjQyNDc0ZGNlZDBiZTUyOWYwZDI5OGUiLCJpYXQiOjE3MTYyMTE3NTgsImV4cCI6MTcxODgwMzc1OH0.wL_JL8PbNjUjB0Qww0P6hJ77jGnOup1MM04D4I0fta8"
+            }
+        },
+        {
+            "_id": "0b6b3939-b6e1-4bae-ad11-5277c0dbfc76",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "9ecdb70d-e652-4d7e-bbe5-82f6544621da",
+            "name": "create group",
+            "url": "",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-05-21T04:22:14.844Z",
+            "modified": "2024-05-21T04:22:14.844Z",
+            "headers": []
+        },
+        {
+            "_id": "ac021de0-356f-43c6-96df-894dfbf93620",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "9ecdb70d-e652-4d7e-bbe5-82f6544621da",
+            "name": "create group 🟢🔴",
+            "url": "http://localhost:8000/api/chat/group",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-05-21T04:22:28.733Z",
+            "modified": "2024-05-21T05:05:54.246Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"cockroach party 3.0\",\n  \"users\":\"[\\\"664adcd1b6b1fcd00e5687f8\\\", \\\"66483d951ee72222586e277f\\\", \\\"6642474dced0be529f0d298e\\\"]\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjRhZGNlYmI2YjFmY2QwMGU1Njg3ZmIiLCJpYXQiOjE3MTYyNjY2MDQsImV4cCI6MTcxODg1ODYwNH0.nHfSQL7yLUZLzffbi-3UWjKEQhvM0Dy-7TsLNHKwggw"
+            }
+        },
+        {
+            "_id": "6d07cb00-a98a-4363-a8c4-92ae0ea41f1e",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "9ecdb70d-e652-4d7e-bbe5-82f6544621da",
+            "name": "fetch chats",
+            "url": "http://localhost:8000/api/chat/fetch/664c330248a0944cecc00002",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-05-21T04:50:34.148Z",
+            "modified": "2024-05-21T06:43:03.331Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjRhZGNlYmI2YjFmY2QwMGU1Njg3ZmIiLCJpYXQiOjE3MTYyNjY2MDQsImV4cCI6MTcxODg1ODYwNH0.nHfSQL7yLUZLzffbi-3UWjKEQhvM0Dy-7TsLNHKwggw"
+            }
+        },
+        {
+            "_id": "72593874-0d22-437f-bb93-8b4d8ca959d0",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "9ecdb70d-e652-4d7e-bbe5-82f6544621da",
+            "name": "add user to existing group 🟢🔴",
+            "url": "http://localhost:8000/api/chat/groupadd",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-05-21T05:10:32.641Z",
+            "modified": "2024-05-21T05:19:09.950Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"chatId\": \"664c2bb28e06a703def3c11b\",\n  \"userId\": \"66483d951ee72222586e277f\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjQ4M2Q5NTFlZTcyMjIyNTg2ZTI3N2YiLCJpYXQiOjE3MTYyNjg0MzMsImV4cCI6MTcxODg2MDQzM30.xSVWzfdXqjteeFYGbYAz7qSjkrZPw6x0JsC3C3EAXvM"
+            }
+        },
+        {
+            "_id": "0d5fcab5-a896-4dac-9d9d-73b1fee7779d",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "9ecdb70d-e652-4d7e-bbe5-82f6544621da",
+            "name": "remove user from the group 🟢🔴",
+            "url": "http://localhost:8000/api/chat/groupremove",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-05-21T05:20:08.730Z",
+            "modified": "2024-05-21T05:26:01.014Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"chatId\": \"664c2bb28e06a703def3c11b\",\n  \"userId\": \"66483d951ee72222586e277f\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjQ4M2Q5NTFlZTcyMjIyNTg2ZTI3N2YiLCJpYXQiOjE3MTYyNjg0MzMsImV4cCI6MTcxODg2MDQzM30.xSVWzfdXqjteeFYGbYAz7qSjkrZPw6x0JsC3C3EAXvM"
+            }
+        },
+        {
+            "_id": "35e72d19-1a05-4375-ac07-d5fed36993d9",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "9ecdb70d-e652-4d7e-bbe5-82f6544621da",
+            "name": "delete GC 🟢🔴",
+            "url": "http://localhost:8000/api/chat/deletegroup",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-05-21T05:27:39.158Z",
+            "modified": "2024-05-21T05:40:43.796Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"chatId\": \"664c330248a0944cecc00002\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjRjMzM5YzQ4YTA5NDRjZWNjMDAwMDgiLCJpYXQiOjE3MTYyNzAwMTAsImV4cCI6MTcxODg2MjAxMH0.e6vwGV0kYiDDFpYYTl_O4XzA3_Pj9DKB-OPYPb5bTEk"
+            }
+        },
+        {
+            "_id": "51fe3130-f213-4e4a-94d2-a6712f606f86",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "04cb89f5-2918-480e-b11c-8024db61041c",
+            "name": "send message",
+            "url": "http://localhost:8000/api/message",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-05-21T06:07:44.451Z",
+            "modified": "2024-05-21T08:51:27.001Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"chatId\": \"664c330248a0944cecc00002\",\n  \"media\": \"https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F2RNK1P0BYVrSCZEy_Sd1Ew%252F3417757448_4a6bdf36ce_o.jpg&width=910\",\n  \"content\": \"haxker\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjRhZGNlYmI2YjFmY2QwMGU1Njg3ZmIiLCJpYXQiOjE3MTYxODI0NDAsImV4cCI6MTcxODc3NDQ0MH0.J2UViJSK-7236lpfHVlyqQRsDHUz0OuL9B5V1DIhuyA"
+            }
+        },
+        {
+            "_id": "8da24861-092c-40e8-9a8f-b84bb42ea1b7",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "04cb89f5-2918-480e-b11c-8024db61041c",
+            "name": "fetch all messages in the chat ",
+            "url": "http://localhost:8000/api/message/fetch/664c330248a0944cecc00002",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-05-21T06:29:50.945Z",
+            "modified": "2024-05-21T06:56:43.202Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjRhZGNlYmI2YjFmY2QwMGU1Njg3ZmIiLCJpYXQiOjE3MTYxODI0NDAsImV4cCI6MTcxODc3NDQ0MH0.J2UViJSK-7236lpfHVlyqQRsDHUz0OuL9B5V1DIhuyA"
+            }
+        },
+        {
+            "_id": "932e870a-b269-4c03-9e34-14403d1386ef",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "04cb89f5-2918-480e-b11c-8024db61041c",
+            "name": "delete message 🟢🔴",
+            "url": "http://localhost:8000/api/message/delete",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2024-05-21T06:49:36.840Z",
+            "modified": "2024-05-21T07:34:07.974Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"messageId\":\"664c3c7330d63b4a73b1b9e8\",\n  \"chatId\":\"664c330248a0944cecc00002\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjRhZGNlYmI2YjFmY2QwMGU1Njg3ZmIiLCJpYXQiOjE3MTYxODI0NDAsImV4cCI6MTcxODc3NDQ0MH0.J2UViJSK-7236lpfHVlyqQRsDHUz0OuL9B5V1DIhuyA"
+            }
+        },
+        {
+            "_id": "5f23ab9d-046b-4fa6-b55a-7e491d8c89d3",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "04cb89f5-2918-480e-b11c-8024db61041c",
+            "name": "search in chat",
+            "url": "http://localhost:8000/api/message/search",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-05-21T08:42:58.961Z",
+            "modified": "2024-05-21T09:04:15.907Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"chatId\":\"664c330248a0944cecc00002\",\n  \"keyword\":\"HAXK\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjRhZGNlYmI2YjFmY2QwMGU1Njg3ZmIiLCJpYXQiOjE3MTYxODI0NDAsImV4cCI6MTcxODc3NDQ0MH0.J2UViJSK-7236lpfHVlyqQRsDHUz0OuL9B5V1DIhuyA"
+            }
+        },
+        {
+            "_id": "8942fa29-c7ad-40ca-9b8b-dab4207a86b0",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "0af79693-5310-4a68-9923-d93073ac826f",
+            "name": "onboard client",
+            "url": "http://localhost:8000/api/users/register/client",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-05-30T05:01:39.585Z",
+            "modified": "2024-05-30T05:10:25.077Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"66580812d86e4adb912555ec\",\n  \"description\": \"I am mister client and I am rich\",\n  \"requirements\": \"edit a wedding video\",\n  \"skillset\": [\"ps\", \"ae\"]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MDgxMmQ4NmU0YWRiOTEyNTU1ZWMiLCJpYXQiOjE3MTcwNDUzOTQsImV4cCI6MTcxOTYzNzM5NH0.N3cuYbw8MR7bE89ODB_dMNcgp5GZur3UmEi2XIcB0yc"
+            }
+        },
+        {
+            "_id": "43daa3ee-fe5c-4c20-9a58-8623d1d8449f",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "1e7a405e-5a5a-4941-936d-ae3095717c58",
+            "name": "get clients",
+            "url": "http://localhost:8000/api/users/clients",
+            "method": "GET",
+            "sortNum": 170000,
+            "created": "2024-05-30T05:21:51.642Z",
+            "modified": "2024-05-30T05:22:43.268Z",
+            "headers": []
+        },
+        {
+            "_id": "18097b31-c453-4a08-b96d-4ecc1ab025c5",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "0af79693-5310-4a68-9923-d93073ac826f",
+            "name": "onboard freelancer",
+            "url": "http://localhost:8000/api/users/register/freelancer",
+            "method": "POST",
+            "sortNum": 180000,
+            "created": "2024-05-30T05:37:26.458Z",
+            "modified": "2024-05-30T05:46:28.383Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userId\": \"66581072ac7d39d4077d0267\",\n  \"bio\": \"I have no life and no money\",\n  \"hourlyRate\": 5,\n  \"education\":[\"10th\", \"12th\", \"Btech\"],\n  \"experience\": [\"Sony Pictures - 1 year\", \"T series - 1 year\"],\n  \"portfolios\":[\"www.aalu.com\"],\n  \"servicesList\":[\"video editing\", \"cinematography\"],\n  \"skills\":[\"ae\", \"pp\", \"ps\"],\n  \"languages\":[\"hindi\", \"telugu\", \"english\"]\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MTA3MmFjN2QzOWQ0MDc3ZDAyNjciLCJpYXQiOjE3MTcwNDc2MDQsImV4cCI6MTcxOTYzOTYwNH0.hXxhwSApwgDSN9DoVcAIC4FujN8uKLzc1SbscxwJVtw"
+            }
+        },
+        {
+            "_id": "1422e0b0-9b64-4602-b7d0-c392e3ef15cd",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "1e7a405e-5a5a-4941-936d-ae3095717c58",
+            "name": "get freelancers",
+            "url": "http://localhost:8000/api/users/freelancers",
+            "method": "GET",
+            "sortNum": 190000,
+            "created": "2024-05-30T05:51:40.817Z",
+            "modified": "2024-05-30T05:52:05.974Z",
+            "headers": []
+        },
+        {
+            "_id": "db8ca13c-d095-46cb-b9db-2e400b4e61aa",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "7a16f61f-5370-4eca-aaa4-14a68364f53f",
+            "name": "create a project 🔵",
+            "url": "http://localhost:8000/api/project/create",
+            "method": "POST",
+            "sortNum": 200000,
+            "created": "2024-05-30T06:02:54.484Z",
+            "modified": "2024-06-01T05:16:56.118Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"wtf jjj\",\n  \"description\": \"we want to make a video\",\n  \"skills\": [\"ae\", \"pp\"],\n  \"budget\": -1,\n  \"deadline\": \"2024-07-01\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MDgxMmQ4NmU0YWRiOTEyNTU1ZWMiLCJpYXQiOjE3MTcwNDk2NDcsImV4cCI6MTcxOTY0MTY0N30.xALf_sHT-1vCNuZf4qyjGWt0LeFddEwpbVgm1JlXGrA"
+            }
+        },
+        {
+            "_id": "20a4148c-b005-47a1-a815-6e1050ae19f1",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "7a16f61f-5370-4eca-aaa4-14a68364f53f",
+            "name": "view unapproved projects",
+            "url": "http://localhost:8000/api/project/unapproved",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2024-05-30T06:59:28.354Z",
+            "modified": "2024-05-30T07:05:29.977Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MjUwZmEyNTJjZjkwOGI2YzYwNWEiLCJpYXQiOjE3MTcwNTI3MDAsImV4cCI6MTcxOTY0NDcwMH0.JoAab3-gbKuo7mFjrxO11pBKx4_4_rWCXzqa-bDmJxw"
+            }
+        },
+        {
+            "_id": "83de47d4-a71a-4bf8-ba36-d09661c5d853",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "7a16f61f-5370-4eca-aaa4-14a68364f53f",
+            "name": "view all projects 🟢",
+            "url": "http://localhost:8000/api/project/all-projects",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2024-05-30T07:14:08.360Z",
+            "modified": "2024-05-30T07:16:03.363Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MjUwZmEyNTJjZjkwOGI2YzYwNWEiLCJpYXQiOjE3MTcwNTI3MDAsImV4cCI6MTcxOTY0NDcwMH0.JoAab3-gbKuo7mFjrxO11pBKx4_4_rWCXzqa-bDmJxw"
+            }
+        },
+        {
+            "_id": "38f5f25a-74a5-44be-b846-12492ba1c18a",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "7a16f61f-5370-4eca-aaa4-14a68364f53f",
+            "name": "accept project 🟢",
+            "url": "http://localhost:8000/api/project/accept",
+            "method": "POST",
+            "sortNum": 230000,
+            "created": "2024-05-30T07:17:59.912Z",
+            "modified": "2024-06-01T05:17:10.896Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"projectId\": \"665aaec810069ab943cfc1b3\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MjUwZmEyNTJjZjkwOGI2YzYwNWEiLCJpYXQiOjE3MTcwNTI3MDAsImV4cCI6MTcxOTY0NDcwMH0.JoAab3-gbKuo7mFjrxO11pBKx4_4_rWCXzqa-bDmJxw"
+            }
+        },
+        {
+            "_id": "650b3008-aa2f-4990-b4a1-8d67bb63c9fc",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "7a16f61f-5370-4eca-aaa4-14a68364f53f",
+            "name": "reject project 🟢",
+            "url": "http://localhost:8000/api/project/delete",
+            "method": "DELETE",
+            "sortNum": 240000,
+            "created": "2024-05-30T07:25:10.050Z",
+            "modified": "2024-05-30T07:31:13.582Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"projectId\": \"66582b388abe411eb5ac14ca\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MjUwZmEyNTJjZjkwOGI2YzYwNWEiLCJpYXQiOjE3MTcwNTI3MDAsImV4cCI6MTcxOTY0NDcwMH0.JoAab3-gbKuo7mFjrxO11pBKx4_4_rWCXzqa-bDmJxw"
+            }
+        },
+        {
+            "_id": "0fa3dd8c-df18-403c-9ffd-5cfad96bf8a0",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "7a16f61f-5370-4eca-aaa4-14a68364f53f",
+            "name": "complete project",
+            "url": "http://localhost:8000/api/project/complete",
+            "method": "POST",
+            "sortNum": 250000,
+            "created": "2024-05-30T09:12:04.248Z",
+            "modified": "2024-06-03T06:27:46.959Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"projectId\": \"6658264343c0b7fb696f81b5\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "176e6c9d-3bb8-4177-891c-631f4d14ecd2",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "1e7a405e-5a5a-4941-936d-ae3095717c58",
+            "name": "search skills",
+            "url": "http://localhost:8000/api/project/search",
+            "method": "GET",
+            "sortNum": 260000,
+            "created": "2024-05-30T09:16:49.556Z",
+            "modified": "2024-05-30T09:29:16.088Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"skills\" : [\"PP\", \"a\"]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d5dceb31-6bd3-40d6-a568-f03627ade7ca",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "4941e6ca-579e-493f-b34b-e84acadccc69",
+            "name": "send proposal🟢",
+            "url": "http://localhost:8000/api/project/send-proposal",
+            "method": "POST",
+            "sortNum": 270000,
+            "created": "2024-05-30T09:33:50.863Z",
+            "modified": "2024-06-03T06:07:23.334Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"projectId\": \"6658264343c0b7fb696f81b5\",\n  \"freelancerId\": \"66581072ac7d39d4077d0267\",\n  \"description\": \"pls111\",\n  \"duration\": 2444,\n  \"amount\": 5000,\n  \"projectRole\": \"worker\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MjUwZmEyNTJjZjkwOGI2YzYwNWEiLCJpYXQiOjE3MTcwNTI3MDAsImV4cCI6MTcxOTY0NDcwMH0.JoAab3-gbKuo7mFjrxO11pBKx4_4_rWCXzqa-bDmJxw"
+            }
+        },
+        {
+            "_id": "ea493987-8012-439b-a525-f90dbea84662",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "4941e6ca-579e-493f-b34b-e84acadccc69",
+            "name": "all proposals 🟢",
+            "url": "http://localhost:8000/api/project/all-proposals",
+            "method": "GET",
+            "sortNum": 280000,
+            "created": "2024-05-30T09:56:56.086Z",
+            "modified": "2024-06-03T05:39:14.011Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"projectId\": \"6658264343c0b7fb696f81b5\" \n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MjUwZmEyNTJjZjkwOGI2YzYwNWEiLCJpYXQiOjE3MTcwNTI3MDAsImV4cCI6MTcxOTY0NDcwMH0.JoAab3-gbKuo7mFjrxO11pBKx4_4_rWCXzqa-bDmJxw"
+            }
+        },
+        {
+            "_id": "025e3f6d-c8ec-4d47-b94b-3fd4becb907c",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "4941e6ca-579e-493f-b34b-e84acadccc69",
+            "name": "view proposal 🟡",
+            "url": "http://localhost:8000/api/project/view-proposal",
+            "method": "GET",
+            "sortNum": 290000,
+            "created": "2024-05-30T10:01:00.577Z",
+            "modified": "2024-06-03T05:40:58.957Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MTA3MmFjN2QzOWQ0MDc3ZDAyNjciLCJpYXQiOjE3MTczOTMyNDYsImV4cCI6MTcxOTk4NTI0Nn0.0r6COBBpJQl5BJ9EOxV--Xd_uiDS29kdoHVXLJfUqMw"
+            }
+        },
+        {
+            "_id": "378812a9-e2ec-4364-9b3e-3ce1fbc9f1ce",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "4941e6ca-579e-493f-b34b-e84acadccc69",
+            "name": "accept proposal 🟡",
+            "url": "http://localhost:8000/api/project/accept-proposal",
+            "method": "POST",
+            "sortNum": 300000,
+            "created": "2024-05-30T10:06:06.519Z",
+            "modified": "2024-06-03T06:17:32.791Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"proposalId\": \"665d5feb4678cd62ec145574\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MTA3MmFjN2QzOWQ0MDc3ZDAyNjciLCJpYXQiOjE3MTczOTMyNDYsImV4cCI6MTcxOTk4NTI0Nn0.0r6COBBpJQl5BJ9EOxV--Xd_uiDS29kdoHVXLJfUqMw"
+            }
+        },
+        {
+            "_id": "4a55c580-d664-4c96-bc3c-a4b76e8d2e4a",
+            "colId": "3c18588e-96e3-45f9-ae6e-6b76c36d7ba0",
+            "containerId": "4941e6ca-579e-493f-b34b-e84acadccc69",
+            "name": "reject proposal 🟡",
+            "url": "http://localhost:8000/api/project/reject-proposal",
+            "method": "POST",
+            "sortNum": 310000,
+            "created": "2024-05-30T10:06:25.165Z",
+            "modified": "2024-06-03T06:08:17.880Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"proposalId\": \"665d5dc3dab3749d031e5cb6\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjU4MTA3MmFjN2QzOWQ0MDc3ZDAyNjciLCJpYXQiOjE3MTczOTMyNDYsImV4cCI6MTcxOTk4NTI0Nn0.0r6COBBpJQl5BJ9EOxV--Xd_uiDS29kdoHVXLJfUqMw"
+            }
+        }
+    ],
+    "ref": "4ZUY97matfECOWdFJQKYknfrtPfE8oFZNv1KRpvQepE3qOqByxuikYNEj5gFQ8y3Fk6BzVck42auRzsArO6zeQ"
+}
