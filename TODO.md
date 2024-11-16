@@ -1,0 +1,103 @@
+# Creator Copilot
+
+- [] Invoice
+- [] new blogs
+- [] slots
+
+### Remember
+- [] forgot password, email verification
+- [x] always keep a admin ID and admin name in .env
+
+### Done
+- [x] check all messages  
+- [x] check all chats  
+- [x] make all message routes  
+- [x] make all message controllers  
+- [x] make all chat routes  
+- [x] make all chat controllers  
+- [x] add Freelancer schema
+- [x] add Client schema
+- [x] add Client controller
+- [x] add freelancer controller
+- [x] add project schema
+- [x] project creation APIs for P.M
+- [x] controller for freelancer to accept project
+- [x] link users to their respective controllers
+- [x] link project schema to chat
+- [x] onboarding APIs complete sync
+- [x] P.M ops -> search freelancers, send req. to freelancer // check GPT once
+- [x] link project to chat , project first and then chat
+- [x] test onboarding APIs
+- [x] test project APIs
+- [x] review update manager
+- [x] change all to asyncHandler
+- [x] PM ops in group -> links, create P.M // varun
+- [x] check if the messages are being populated in chats
+- [x] check protect once - like can we onboard without same person login - once check the non login handling - I mean how it reacts when login with bearer and when not
+- [x] dont add the guy again in the project if he is already in the project
+- [x] upon new project, it should be added to ongoing projects of client, freelancer, PM and upon completion, it should be added to completed projects of client, PM, freelancer
+- [x] credit system for client // varun
+- [x] controller for payment gateway to increase credits in client and for to increase credits in freelancer // varun
+- [x] start frontend
+- [x] implement UI - chat
+- [x] implement UI - onboarding
+- [x] implement RTK
+- [x] implement UI - profile
+- [x] connect backend to frontend
+- [x] which font? - poppins
+- [x] chat page - improve chat bubble, add background for chat
+- [x] chat page - unapproved chats to be shown as unapproved
+- [x] chat page - distinguish between group and chats
+- [x] chat page - dont show the guys who u already have a chat with
+- [x] chat page - improve the dialog boxes
+- [x] chat page - add msg search and chats search
+- [x] chat page - hide names for client and freelancer
+- [x] chat page - chat name bug fix
+- [x] implement UI - payments
+- [x] signout
+- [x] implement UI - project
+- [x] implement UI - dashboard
+- [x] integrate blogs
+- [x] UID
+- [x] fix signup bug
+- [x] protected routes
+- [x] edit profile
+- [x] profile slots
+- [x] Admin console
+- [x] chat page - chat scroll down
+- [x] pay cycle controllers
+- [x] need to add route for update manager
+- [x] refinement in dashboard design
+- [x] refinement in project page
+- [x] PM - client pairs
+- [x] Admin to add new project managers
+- [x] profile view in search freelancers
+- [x] rate card
+- [x] notifications
+- [x] integrate calling feature
+- [x] admin console
+- [x] add APIs page
+- [x] google signin
+- [x] group chat creation after project accept
+- [x] add in group chat after project accept by freelancer
+- [x] hidden names in group info
+- [x] how a project will be completed? - add a mark as completed button
+- [x] edit profile
+- [x] clear DB and check the flow final
+- [x] responsiveness
+- [x] check all pages
+- [x] remove dangerous console logs
+- [x] redirect to home if no token - vice versa
+- [x] admin panel - for each user - .csv
+- [x] payments - check
+- [x] Add URL in .env
+- [x] Client can't see resources page
+- [x] resp in onboarding page
+- [x] varun admin thing only for admin
+- [x] show assigned PM in client profile
+- [x] admin chat - support
+- [x] rates fetch from the db - in CreateProject.tsx
+- [x] only the related PM will be able to see the project of the client
+- [x] projects - more than 1 day, show in in progress
+- [x] inbox page responsiveness
+- [x] credits cut after the project is completed and add it to the freelancers and send respective credits to them
